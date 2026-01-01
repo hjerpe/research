@@ -68,8 +68,10 @@ That's it! Everything else is defined below.
   - Next steps or open questions (optional)
 
 ### Step 6: Create Branch & Commit
-- Create branch: `research/[topic-slug]`
+- Create branch with descriptive name:
+  - Pattern: `research/[topic-slug]`
   - Example: `research/asyncio-vs-threading`
+  - Or: `claude/research-[topic-slug]` (if using Claude Code on Web auto-naming)
 - Commit files with clear, descriptive messages
 - Include:
   - ✅ `notes.md` (work log)
@@ -80,11 +82,25 @@ That's it! Everything else is defined below.
   - ❌ Full copies of external code/repos
   - ❌ Large binary files (>2MB)
   - ❌ Dependencies or node_modules
+- Push branch to origin: `git push -u origin [branch-name]`
 
 ### Step 7: Create Pull Request
-- Create PR with summary of key findings in description
-- Highlight most important insights
-- Reference any related issues or previous research
+- Create PR using GitHub CLI:
+  ```bash
+  gh pr create --title "Research: [topic]" --body "$(cat <<'EOF'
+  ## Key Findings
+  [2-3 sentence summary of most important discoveries]
+
+  ## Research Details
+  - Type: [technical/product/academic/quick-fact/strategy]
+  - Directory: research/YYYY-MM-DD-HH-MM-[topic-slug]/
+  - Sources: [number] sources reviewed
+
+  See README.md in research directory for full report.
+  EOF
+  )"
+  ```
+- Or if `gh` CLI not available, push branch and create PR manually via GitHub UI
 - PR will be reviewed before merging
 
 ---
