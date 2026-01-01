@@ -172,24 +172,6 @@ Tailor your approach based on research type specified in the prompt:
 ## Template Reference
 
 Always structure `README.md` following `.templates/RESEARCH_TEMPLATE.md`.
-
-Required sections:
-1. Title and metadata (date, type)
-2. Research question
-3. Executive summary
-4. Key findings
-5. Sources & references
-6. Code experiments (if technical)
-7. Next steps (optional)
-
----
-
-## Important Reminders
-
-- **Use web search actively** - Don't rely solely on training data
-- **Test all code** - Code that doesn't run is not acceptable
-- **Cite sources with URLs** - Every claim needs a source
-- **Update notes.md throughout** - Not just at the end
 - **Quality over speed** - Thorough research is more valuable
 - **Cross-check facts** - Verify information across sources
 
