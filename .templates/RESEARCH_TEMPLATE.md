@@ -58,4 +58,4 @@ python experiments/experiment-1.py
 
 ---
 
-*Research conducted using Claude Code | [View notes.md for work log](notes.md)*
+*Research conducted by [Agent Name: Claude Code/Gemini Jules/Other] | [View notes.md for work log](notes.md)*
